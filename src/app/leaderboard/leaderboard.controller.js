@@ -10,8 +10,6 @@
 
     $scope.workspaces = [];
     $scope.workspaces.push({ name: 'Workspace 1' });
-    $scope.workspaces.push({ name: 'Workspace 2' });
-    $scope.workspaces.push({ name: 'Workspace 3' });
 
     //generate random rows
     $scope.workspaces.forEach(function (wk) {
@@ -27,21 +25,18 @@
           },
           cache: false,
           height: 400,
-          striped: true,
-          pagination: true,
+          striped: false ,
+          pagination: false,
           pageSize: 10,
           pageList: [5, 10, 25, 50, 100, 200],
-          search: true,
-          showColumns: true,
+          search: false,
+          showColumns: false,
           showRefresh: false,
           minimumCountColumns: 2,
-          clickToSelect: true,
-          showToggle: true,
+          clickToSelect: false,
+          showToggle: false,
           maintainSelected: true,
-          columns: [{
-              field: 'state',
-              checkbox: true
-          }, {
+          columns: [ {
               field: 'index',
               title: '#',
               align: 'right',
@@ -69,10 +64,11 @@
       };
     });
 
-
     $scope.changeCurrentWorkspace = function (wk) {
         $scope.currentWorkspace = wk;
     }
+
+    $scope.changeCurrentWorkspace($scope.workspaces[0]);
 
     //Select the workspace in document ready event
     $(document).ready(function () {
