@@ -10,8 +10,6 @@
 
     $scope.workspaces = [];
     $scope.workspaces.push({ name: 'Workspace 1' });
-    $scope.workspaces.push({ name: 'Workspace 2' });
-    $scope.workspaces.push({ name: 'Workspace 3' });
 
     //generate random rows
     $scope.workspaces.forEach(function (wk) {
@@ -69,10 +67,11 @@
       };
     });
 
-
     $scope.changeCurrentWorkspace = function (wk) {
         $scope.currentWorkspace = wk;
     }
+
+    $scope.changeCurrentWorkspace($scope.workspaces[0]);
 
     //Select the workspace in document ready event
     $(document).ready(function () {
