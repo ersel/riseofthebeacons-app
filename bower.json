@@ -20,7 +20,8 @@
     "angular": "~1.4.2",
     "bootstrap-table": "~1.9.0",
     "angular-slick": "~0.2.1",
-    "angular-chart.js": "~0.8.5"
+    "angular-chart.js": "~0.8.5",
+    "angular-moment": "~0.10.3"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.2"

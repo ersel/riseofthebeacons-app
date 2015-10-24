@@ -9,19 +9,19 @@
   function LunchFeedController($timeout, webDevTec, toastr, $scope) {
       $scope.value = 70;
       $scope.max = 100
-      $scope.people=[{name:'Janie',time:'05 October 2011 14:48 UTC'},
-                    {name:'Hege',time:'05 October 2011 14:48 UTC'},
-                    {name:'Kai',time:'05 October 2011 14:48 UTC'},
-                    {name:'Tom',time:'05 October 2011 14:48 UTC'},
-                    {name:'Dave',time:'05 October 2011 14:48 UTC'},
-                    {name:'Bob',time:'05 October 2011 14:48 UTC'},
-                    {name:'Tony',time:'05 October 2011 14:48 UTC'},
-                    {name:'Maria',time:'05 October 2011 14:48 UTC'},
-                    {name:'Abdul',time:'05 October 2011 14:48 UTC'},
-                    {name:'Gregory',time:'05 October 2011 14:48 UTC'},
-                    {name:'Jameel',time:'05 October 2011 14:48 UTC'},
-                    {name:'Ersel',time:'05 October 2011 14:48 UTC'},
-                    {name:'Spyros',time:'05 October 2011 14:48 UTC'}]
+      $scope.people=[{name:'Janie',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Hege',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Kai',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Tom',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Dave',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Bob',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Tony',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Maria',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Abdul',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Gregory',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Jameel',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Ersel',time:'2015-10-16T16:30:48.000Z'},
+                    {name:'Spyros',time:'2015-10-16T16:30:48.000Z'}]
 
       if ($scope.value < 80) {
         $scope.type = 'success';
