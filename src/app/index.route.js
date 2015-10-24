@@ -14,6 +14,12 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .state('carousel', {
+        url: '/carousel',
+        templateUrl: 'app/carousel/carousel.html',
+        controller: 'CarouselController',
+        controllerAs: 'carousel'
+      })
       .state('leaderboard', {
         url: '/leaderboard',
         templateUrl: 'app/leaderboard/leaderboard.html',
