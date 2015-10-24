@@ -23,8 +23,7 @@
         <h2 class="lunchfeed title">Lunch Feed</h2>
         <table class="lunchfeed table">
             <tr data-ng-repeat="person in people">
-              <td>{{ person.name }} just checked into the lunch room</td>2015-10-16T16:30:48.000Z
-              <td><span am-time-ago="{{ person.time }}| amParse:'YYYY-MM-DDTHH:mm:ss.sssZ'"></span></td>
+              <td>{{ person.name }} checked into the lunch room {{person.time}}.</td>
             </tr>
         </table>
     </div>
