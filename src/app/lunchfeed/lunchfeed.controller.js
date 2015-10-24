@@ -7,19 +7,14 @@
 
   /** @ngInject */
   function LunchFeedController($timeout, webDevTec, toastr, $scope) {
-      var value = 75;
-      var type;
-
+      $scope.value = 70;
       $scope.max = 100;
 
       if ($scope.value < 80) {
-        type = 'success';
+        $scope.type = 'success';
       } else {
-        type = 'danger';
+        $scope.type = 'danger';
       }
-
-    $scope.type = type;
-    $scope.value = value;
   };
 
 })();
