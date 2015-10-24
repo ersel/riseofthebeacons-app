@@ -22,9 +22,9 @@
     <div class="col-xs-4 lunchfeed feed">
         <h2 class="lunchfeed title">Lunch Feed</h2>
         <table class="lunchfeed table">
-            <tr data-ng-repeat="name in names">
-              <td>{{ name }} just checked into the lunch room</td>
-              <td>12:00</td>
+            <tr data-ng-repeat="person in people">
+              <td>{{ person.name }} just checked into the lunch room</td>
+              <td>{{ person.time}}</td>
             </tr>
         </table>
     </div>
