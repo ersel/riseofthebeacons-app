@@ -19,6 +19,12 @@
         templateUrl: 'app/leaderboard/leaderboard.html',
         controller: 'LeaderboardController',
         controllerAs: 'leaderboard'
+      })
+      .state('twitterfeed', {
+        url: '/twitterfeed',
+        templateUrl: 'app/twitterfeed/twitterfeed.html',
+        controller: 'TwitterFeedController',
+        controllerAs: 'twitterfeed'
       });
 
     $urlRouterProvider.otherwise('/');
