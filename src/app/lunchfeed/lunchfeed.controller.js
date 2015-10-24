@@ -6,7 +6,7 @@
     .controller('LunchFeedController', LunchFeedController);
 
   /** @ngInject */
-  function LunchFeedController($timeout, webDevTec, toastr, $scope) {
+  function LunchFeedController($timeout, webDevTec, toastr, $scope, moment, _) {
       $scope.value = 70;
       $scope.max = 100
       $scope.people=[{name:'Janie',time:'2015-10-16T16:30:48.000Z'},
@@ -23,11 +23,15 @@
                     {name:'Ersel',time:'2015-10-16T16:30:48.000Z'},
                     {name:'Spyros',time:'2015-10-16T16:30:48.000Z'}]
 
+      $scope.people = _.map($scope.people, function(person){ person.time =moment(person.time).fromNow(); return person; });
+
+
       if ($scope.value < 80) {
         $scope.type = 'success';
       } else {
         $scope.type = 'danger';
       }
+
   };
 
 })();
