@@ -1,22 +1,60 @@
-<div class="container">
+<div class="container" ng-controller="LunchFeedController">
+    <div class="col-xs-9" style="border: 1px solid; padding-left:30px;height:900px;">
+        lalallala
+        lalala
+        <div class="row" style="border: 1px solid;">
+            <div class="col-xs-6" style="border: 1px solid;">
+                item1
+            </div>
+            <div class="col-xs-6" style="border: 1px solid;">
+                item2
+            </div>
+            <div class="col-xs-6" style="border: 1px solid;">
+                item3
+            </div>
+            <div class="col-xs-6" style="border: 1px solid;">
+                item4
+            </div>
+        </div>
+        <div class="row" style="border: 1px solid; padding-left: 50px;">
+            prog bar
+        </div>
+    </div>
+    <div class="col-xs-3" style="border: 1px solid; height:900px;">
+        feeeed
+    </div>
+    <!--
     <div class="row">
+        <h2>Lunch Feed</h2>
         <table>
-            <tr>
-              <td>Jill</td>
+            <tr data-ng-repeat="name in names">
+              <td>{{ name }}</td>
               <td>just checked into the lunch room</td>
               <td>12:00</td>
-            </tr>
-            <tr>
-              <td>Eve</td>
-              <td>just checked into the lunch room</td>
-              <td>11:58</td>
             </tr>
         </table>
     </div>
     <div class="row">
-        <h2>Lunch Room Capacity</h2>
-        <div ng-controller="LunchFeedController">
-            <progressbar value="value" type="{{type}}" max="max" title="asdsa" />
+        <h2>Todays Menu</h2>
+        <div class="col-xs-12 col-sm-4" style="border: 1px solid">1
+            <img src="http://www.gfood.co.za/wp-content/uploads/2014/04/fruit_juice.jpg" width="100%">
+        </div>
+        <div class="col-xs-12 col-sm-4">2
+        </div>
+        <div class="col-xs-12 col-sm-4">3
+        </div>
+
+        <div class="row">
+            <ul>
+                <li>Soup: £1.20</li>
+                <li>Chicken: £2.90</li>
+                <li>Burrito: £2.50</li>
+            </ul>
         </div>
     </div>
+    <div class="row">
+        <h2>Lunch Room Capacity</h2>
+            <progressbar value="value" type="{{type}}" max="max" title="asdsa" />
+    </div>
+-->
 </div>

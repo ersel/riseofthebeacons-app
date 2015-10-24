@@ -8,7 +8,8 @@
   /** @ngInject */
   function LunchFeedController($timeout, webDevTec, toastr, $scope) {
       $scope.value = 70;
-      $scope.max = 100;
+      $scope.max = 100
+      $scope.names=['Jani','Hege','Kai']
 
       if ($scope.value < 80) {
         $scope.type = 'success';
