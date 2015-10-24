@@ -1,7 +1,6 @@
 <div class="container" ng-controller="LunchFeedController">
     <div class="col-xs-9" style="border: 1px solid; padding-left:30px;height:900px;">
-        lalallala
-        lalala
+        <h2>Todays Menu</h2>
         <div class="row" style="border: 1px solid;">
             <div class="col-xs-6" style="border: 1px solid;">
                 item1
@@ -16,12 +15,18 @@
                 item4
             </div>
         </div>
-        <div class="row" style="border: 1px solid; padding-left: 50px;">
-            prog bar
+        <div class="row" style="border: 1px solid;">
+            <progressbar value="value" type="{{type}}" max="max" title="asdsa" />
         </div>
     </div>
     <div class="col-xs-3" style="border: 1px solid; height:900px;">
-        feeeed
+        <h2>Lunch Feed</h2>
+        <table>
+            <tr data-ng-repeat="name in names">
+              <td>{{ name }} just checked into the lunch room</td>
+              <td>12:00</td>
+            </tr>
+        </table>
     </div>
     <!--
     <div class="row">
