@@ -37,6 +37,12 @@
         templateUrl: 'app/twitterfeed/twitterfeed.html',
         controller: 'TwitterFeedController',
         controllerAs: 'twitterfeed'
+      })
+      .state('barchart', {
+        url: '/barchart',
+        templateUrl: 'app/barchart/barchart.html',
+        controller: 'BarChartController',
+        controllerAs: 'barchart'
       });
 
     $urlRouterProvider.otherwise('/');
