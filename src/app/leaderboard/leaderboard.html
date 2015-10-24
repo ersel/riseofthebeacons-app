@@ -1,2 +1,12 @@
 <div class="container">
+    <!-- Workspaces nav -->
+		Fuck sake
+    <ul class="nav nav-tabs">
+        <li role="presentation" ng-repeat="wk in workspaces" ng-class="{active: currentWorkspace==wk}" ng-click="changeCurrentWorkspace(wk)"><a href="#">{{wk.name}}</a></li>
+    </ul>
+
+    <!-- Workspaces containers -->
+    <div class="workspaceContainer" ng-repeat="wk in workspaces" ng-show="currentWorkspace==wk">
+        <table data-options="wk.tableOptions" bs-table-control> </table>
+    </div>
 </div>
