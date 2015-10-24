@@ -26,6 +26,12 @@
         controller: 'LeaderboardController',
         controllerAs: 'leaderboard'
       })
+      .state('lunchfeed', {
+        url: '/lunchfeed',
+        templateUrl: 'app/lunchfeed/lunchfeed.html',
+        controller: 'LunchFeedController',
+        controllerAs: 'lunchfeed'
+      })
       .state('twitterfeed', {
         url: '/twitterfeed',
         templateUrl: 'app/twitterfeed/twitterfeed.html',
