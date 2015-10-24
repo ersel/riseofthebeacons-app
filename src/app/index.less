@@ -10,6 +10,7 @@
  *  The list of variables are listed here bower_components/bootstrap/less/variables.less
  */
 @navbar-inverse-link-color: #5AADBB;
+@title-text-colour: #1540B2;
 @icon-font-path: '../../bower_components/bootstrap/fonts/';
 
 .browsehappy {
@@ -25,6 +26,42 @@
   img.pull-right {
     width: 50px;
   }
+}
+
+.lunchfeed {
+    &.image{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    &.price{
+        text-align: center;
+        font-size: 18px;
+    }
+    &.table{
+        width: 100%;
+        background-color: antiquewhite;
+    }
+    &.background{
+        background-image: url("http://localhost:3000/assets/images/restaurant_icons.png");
+        background-repeat: repeat;
+        height: 100%;
+    }
+    &.title{
+        color: @title-text-colour;
+        text-align: center;
+        font-size: 60px;
+        font-style: bold;
+        font-family: tangerine, sans-serif;
+    }
+    &.menuitem{
+        color: @title-text-colour;
+        text-align: center;
+        font-size: 40px;
+        font-style: bold;
+        font-family: tangerine, sans-serif;
+    }
 }
 
 /**

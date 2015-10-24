@@ -1,36 +1,32 @@
+<div class="lunchfeed background">
 <div class="container" ng-controller="LunchFeedController">
-    <div class="col-xs-9" style="border: 1px solid; height:600px;">
-        <h2>Todays Menu</h2>
-        <div class="row" style="border: 1px solid;">
-            <div class="col-xs-6" style="border: 1px solid;">
-                Burger
-                <img src="http://thefoodden.co.nz/wp-content/uploads/2014/08/Food-Lineup-burger-bar1.png">
+    <div class="col-xs-8">
+        <h2 class="lunchfeed title">Today's Menu</h2>
+        <div class="lunchfeed row">
+            <div class="col-xs-6">
+                <div class="lunchfeed menuitem">Burger</div>
+                <img class="lunchfeed image" src="http://thefoodden.co.nz/wp-content/uploads/2014/08/Food-Lineup-burger-bar1.png">
+                <div class="lunchfeed price">Price £3.80</div>
             </div>
-            <div class="col-xs-6" style="border: 1px solid;">
-                Soup
-                <img src="http://3.imimg.com/data3/FL/MY/MY-4571823/garlic-vegetable-soup-250x250.png">
-            </div>
-            <div class="col-xs-6" style="border: 1px solid;">
-                Tacos
-                <img src="http://intrinsicalgorithm.com/IAonAI/wp-content/uploads/2012/11/6a00d8341c5e0053ef016302a5b7f5970d-800wi.png">
-            </div>
-            <div class="col-xs-6" style="border: 1px solid;">
-                Quiche
-                <img src="http://amourdequiches.com/wp-content/uploads/quiche-fransoise-250x250.png">
+            <div class="col-xs-6">
+                <div class="lunchfeed menuitem">Lentil Soup</div>
+                <img class="lunchfeed image" src="http://3.imimg.com/data3/FL/MY/MY-4571823/garlic-vegetable-soup-250x250.png">
+                <div class="lunchfeed price">Price £2.00</div>
             </div>
         </div>
-        <h2>Lunch Room Capacity</h2>
-        <div class="row" style="border: 1px solid;">
-            <progressbar value="value" type="{{type}}" max="max" title="asdsa" />
+        <h2 class="lunchfeed capacity title" style="padding-top:70px;">Lunch Room Capacity</h2>
+        <div class="row" class="lunchfeed capacity">
+            <progressbar value="value" type="{{type}}" max="max" title="asdsa">{{value}}/{{max}} Seats Occupied</progressbar>
         </div>
     </div>
-    <div class="col-xs-3" style="border: 1px solid; height:600px;">
-        <h2>Lunch Feed</h2>
-        <table>
-            <tr data-ng-repeat="name in names" style="border: 1px solid;">
+    <div class="col-xs-4 lunchfeed feed">
+        <h2 class="lunchfeed title">Lunch Feed</h2>
+        <table class="lunchfeed table">
+            <tr data-ng-repeat="name in names">
               <td>{{ name }} just checked into the lunch room</td>
               <td>12:00</td>
             </tr>
         </table>
     </div>
+</div>
 </div>

@@ -9,7 +9,7 @@
   function LunchFeedController($timeout, webDevTec, toastr, $scope) {
       $scope.value = 70;
       $scope.max = 100
-      $scope.names=['Jani','Hege','Kai']
+      $scope.names=['Jani','Hege','Kai', 'Tom','Dave','Bob', 'Tony', 'Maria', 'Abdul', 'Gregory', 'Jameel', 'Ersel', 'Spyros']
 
       if ($scope.value < 80) {
         $scope.type = 'success';
