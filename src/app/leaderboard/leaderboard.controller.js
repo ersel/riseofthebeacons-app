@@ -11,11 +11,15 @@
     $scope.workspaces = [];
     $scope.workspaces.push({ name: 'Workspace 1' });
 
+    var companies = ["American Express", "Barclays", "DueCourse", "Google", "Rise"];
+    var noOfHours = [40, 36, 34, 28, 22];
+    var bestEmployee = ["Andrei", "Spyros", "Anthony", "Bob", "Ersel"]
+
     //generate random rows
     $scope.workspaces.forEach(function (wk) {
       wk.rows = [];
-      for (var i = 0; i < 10; i++) {
-          wk.rows[i] = {  id: i, name: 'GOOG', workspace: wk.name };
+      for (var i = 0; i < 5; i++) {
+          wk.rows[i] = {  id: companies[i], name: noOfHours[i], workspace: bestEmployee[i] };
       }
 
       wk.tableOptions = {

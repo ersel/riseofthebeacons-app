@@ -3,7 +3,7 @@
         <div class="leaderboard title">
             <i class="fa fa-trophy"></i> Hard Working Teams <i class="fa fa-trophy"></i>
         </div>
-        <div class="workspaceContainer" style="padding-top:20px" ng-repeat="people in peoples" ng-show="currentWorkspace==wk" ng-bind="">
+        <div class="workspaceContainer" style="padding-top:20px" ng-repeat="wk in workspaces" ng-show="currentWorkspace==wk">
             <table class="pure-table pure-table-striped" data-options="wk.tableOptions" bs-table-control> </table>
         </div>
     </div>
