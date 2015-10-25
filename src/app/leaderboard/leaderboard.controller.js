@@ -14,7 +14,7 @@
     //generate random rows
     $scope.workspaces.forEach(function (wk) {
       wk.rows = [];
-      for (var i = 0; i < 500; i++) {
+      for (var i = 0; i < 10; i++) {
           wk.rows[i] = { index: i, id: 'row ' + i, name: 'GOOG', workspace: wk.name };
       }
 
@@ -24,7 +24,7 @@
               return { classes: 'none' };
           },
           cache: false,
-          height: 400,
+          height: 700,
           striped: false ,
           pagination: false,
           pageSize: 10,
