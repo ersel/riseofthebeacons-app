@@ -16,7 +16,11 @@
 @icon-font-path: '../../bower_components/bootstrap/fonts/';
 @first-row-color: rgb(232, 81, 93);
 @second-row-color: rgb(63, 62, 105);
+@demo-height: 700px;
 
+.fixed-table-container{
+  border: 0px;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -39,17 +43,13 @@
 .carousel{
   &.main{
   }
-  &.footer{
-    height: 13%;
-    background-color: @rise-grey;
-  }
 }
 
 .twitterfeed {
     &.background{
         background-image: url("http://localhost:3000/assets/images/128-59.jpg");
         background-repeat: repeat;
-        height: 100%;
+        height: @demo-height;
         padding-top:10px;
     }
     &.tweetbox{
@@ -89,7 +89,7 @@
     &.background{
         background-image: url("http://localhost:3000/assets/images/restaurant_icons.png");
         background-repeat: repeat;
-        height: 100%;
+        height: @demo-height;
     }
     &.title{
         color: @title-text-colour;
@@ -123,7 +123,7 @@
     &.background{
         background-image: url("http://localhost:3000/assets/images/128-136.jpg");
         background-repeat: repeat;
-        height: 100%;
+        height: @demo-height;
         padding-top:10px;
     }
 }
@@ -145,7 +145,7 @@
     &.background{
         background-image: url("http://localhost:3000/assets/images/128-191.jpg");
         background-repeat: repeat;
-        height: 100%;
+        height: @demo-height;
         padding-top:10px;
     }
     &.container{
