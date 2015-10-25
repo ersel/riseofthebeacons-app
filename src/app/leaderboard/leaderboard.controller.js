@@ -13,7 +13,7 @@
 
     var companies = ["American Express", "Barclays", "DueCourse", "Google", "Rise"];
     var noOfHours = [40, 36, 34, 28, 22];
-    var bestEmployee = ["Andrei", "Spyros", "Anthony", "Bob", "Ersel"]
+    var bestEmployee = ["Andrei Sherbo", "Ronnie Pickering", "Greg Jones", "Bob Wilkinson", "Tony Ale"]
 
     //generate random rows
     $scope.workspaces.forEach(function (wk) {
@@ -48,7 +48,7 @@
               sortable: true
           }, {
               field: 'name',
-              title: 'No. of Hours per Employee',
+              title: 'No. of Hours per Employee (Average)',
               align: 'center',
               valign: 'middle',
               sortable: true
