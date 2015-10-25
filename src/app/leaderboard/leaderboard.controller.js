@@ -15,7 +15,7 @@
     $scope.workspaces.forEach(function (wk) {
       wk.rows = [];
       for (var i = 0; i < 10; i++) {
-          wk.rows[i] = { index: i, id: 'row ' + i, name: 'GOOG', workspace: wk.name };
+          wk.rows[i] = {  id: i, name: 'GOOG', workspace: wk.name };
       }
 
       wk.tableOptions = {
@@ -37,26 +37,20 @@
           showToggle: false,
           maintainSelected: true,
           columns: [ {
-              field: 'index',
-              title: '#',
-              align: 'right',
-              valign: 'bottom',
-              sortable: true
-          }, {
               field: 'id',
-              title: 'Item ID',
+              title: 'Company',
               align: 'center',
               valign: 'bottom',
               sortable: true
           }, {
               field: 'name',
-              title: 'Item Name',
+              title: 'No. of Hours per Employee',
               align: 'center',
               valign: 'middle',
               sortable: true
           }, {
               field: 'workspace',
-              title: 'Workspace',
+              title: 'Employee of the Week',
               align: 'left',
               valign: 'top',
               sortable: true
