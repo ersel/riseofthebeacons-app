@@ -1,6 +1,10 @@
 <div class="leaderboard background">
-    <!-- Workspaces containers -->
-    <div class="workspaceContainer" ng-repeat="wk in workspaces" ng-show="currentWorkspace==wk">
-        <table class="pure-table pure-table-striped" data-options="wk.tableOptions" bs-table-control> </table>
+    <div class="container">
+        <div class="leaderboard title">
+            Top Performing Teams
+        </div>
+        <div class="workspaceContainer" style="padding-top:20px" ng-repeat="wk in workspaces" ng-show="currentWorkspace==wk">
+            <table class="pure-table pure-table-striped" data-options="wk.tableOptions" bs-table-control> </table>
+        </div>
     </div>
 </div>
